@@ -94,3 +94,5 @@ d3.tsv("data.tsv", function(error, data) {
         d = x0 - d0.date > d1.date - x0 ? d1 : d0;
     focus.attr("transform", "translate(" + x(d.date) + "," + y(d.close) + ")");
     focus.select("text").text(formatCurrency(d.close));
+  }
+});
